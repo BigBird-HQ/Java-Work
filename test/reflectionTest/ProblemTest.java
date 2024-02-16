@@ -65,6 +65,7 @@ public void moreThanOneProblemCanBeAdded_oneProblemCanBeRemovedTest() {
         assertFalse(person.problems.isEmpty());
         person.removeProblem(problem);
         assertFalse(person.problems.isEmpty());
+
 }
 
 
