@@ -16,7 +16,6 @@ public class FireDrillFive {
     }
 
     private int[] doubleTheLength(int[] inputArrays) {
-        int[] expectedArray = new int[inputArrays.length*2];
-        return expectedArray;
+        return new int[inputArrays.length*2];
     }
 }
