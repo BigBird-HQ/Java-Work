@@ -1,4 +1,4 @@
-package reflection;
+package reflectionOne;
 
 public class Problem {
     private String name;

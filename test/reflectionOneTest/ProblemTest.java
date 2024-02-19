@@ -1,10 +1,10 @@
-package reflectionTest;
+package reflectionOneTest;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import reflection.Person;
-import reflection.Problem;
-import reflection.TypeOfProblem;
+import reflectionOne.Person;
+import reflectionOne.Problem;
+import reflectionOne.TypeOfProblem;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

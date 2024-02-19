@@ -1,4 +1,4 @@
-package reflection;
+package reflectionOne;
 
 public enum TypeOfProblem {
     FINANCIAL,
