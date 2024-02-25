@@ -1,17 +1,21 @@
 package bank;
 
-public class MyAccount {
+public class Account {
 
     private String name;
     private int balance;
     private String pin;
     private int number;
 
-    public MyAccount(String name, int balance, String pin, int number) {
+    public Account(String name, int balance, String pin, int number) {
         this.name =  name;
         this.balance = balance;
         this.pin = pin;
         this.number = number;
+    }
+
+    public Account(String firstName, String lastName ,String pin){
+                   this(firstName+" "+lastName,0, pin, 0);
     }
 
     public int checkBalance(String pin) {
@@ -24,13 +28,13 @@ public class MyAccount {
     }
 
     public void withdraw(int amount, String pin) {
+        validate(amount, pin);
         insufficientFunds(amount);
         invalidAmount(amount);
-        validatePin(amount, pin);
         balance -= amount;
     }
 
-    private void validatePin(int amount, String pin) {
+    private void validate(int amount, String pin) {
         if (!pin.equals(this.pin)) throw new InvalidPinException("Incorrect PIN! Enter correct PIN");
 
     }
