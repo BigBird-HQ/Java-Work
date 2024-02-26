@@ -55,4 +55,12 @@ public class Diary {
         }
         return null;
     }
+
+    public void deleteEntry(int idNumber) {
+        entries.remove(findEntryById(idNumber));
+    }
+
+    public void updateEntry(String newTitle, String newBody) {
+
+    }
 }

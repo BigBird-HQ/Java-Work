@@ -61,6 +61,7 @@ public class DiaryTest {
         myDiary.createEntry("title1", "body1");
         assertEquals(2, myDiary.getTotalNumberOfEntry());
     }
+
     @Test
     public void entryCanBeFoundUsingId_findEntryByIdTest() {
         assertFalse(myDiary.isLocked());
@@ -73,6 +74,33 @@ public class DiaryTest {
         Entry foundEntry = myDiary.findEntryById(1);
         assertEquals(myDiary.findEntryById(1), foundEntry);
     }
+
+    @Test
+    public void entryCanBeDeleted_deleteEntryTest() {
+        assertFalse(myDiary.isLocked());
+        myDiary.lockDiary();
+        assertTrue(myDiary.isLocked());
+        myDiary.unlockDiary("password");
+        assertFalse(myDiary.isLocked());
+        myDiary.createEntry("title", "body");
+        myDiary.createEntry("title1", "body1");
+        myDiary.deleteEntry(1);
+        assertEquals(1, myDiary.getTotalNumberOfEntry());
+    }
+
+    @Test
+    public void entryCanBeUpdated_updateEntryTest() {
+        assertFalse(myDiary.isLocked());
+        myDiary.lockDiary();
+        assertTrue(myDiary.isLocked());
+        myDiary.unlockDiary("password");
+        assertFalse(myDiary.isLocked());
+        myDiary.createEntry("title", "body");
+        myDiary.createEntry("title1", "body1");
+        myDiary.updateEntry("newTitle", "newBody");
+
+    }
+
 
 
 }
