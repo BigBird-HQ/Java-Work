@@ -9,7 +9,7 @@ public class Diary {
     private String password;
     private List<Entry> entries = new ArrayList<>();
     private int idNumber;
-    private int totalNumberOfEntry;
+
 
     public Diary(String username, String password) {
         this.username = username;
@@ -34,7 +34,7 @@ public class Diary {
         int id = generateId();
         Entry myEntry = new Entry(id, "title", "body");
         entries.add(myEntry);
-        totalNumberOfEntry++;
+        entries.size();
     }
 
     private int generateId() {
@@ -45,13 +45,11 @@ public class Diary {
         return entries.size();
     }
 
-
     public Entry findEntryById(int idNumber) {
         for (Entry myEntry : entries) {
             if (myEntry.getId() == idNumber) {
                 return myEntry;
             }
-
         }
         return null;
     }
@@ -60,7 +58,9 @@ public class Diary {
         entries.remove(findEntryById(idNumber));
     }
 
-    public void updateEntry(String newTitle, String newBody) {
-
+    public void updateEntry(int idNumber, String newTitle, String newBody) {
+        Entry updatedEntry = findEntryById(idNumber);
+        updatedEntry.setBody("updatedBody");
+        updatedEntry.setTitle();
     }
 }

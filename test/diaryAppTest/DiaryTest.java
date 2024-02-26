@@ -97,10 +97,10 @@ public class DiaryTest {
         assertFalse(myDiary.isLocked());
         myDiary.createEntry("title", "body");
         myDiary.createEntry("title1", "body1");
-        myDiary.updateEntry("newTitle", "newBody");
+        myDiary.updateEntry(2,"updatedTitle", "updatedBody");
+        assertEquals(myDiary.findEntryById(2).getBody(), "updatedBody");
 
     }
-
 
 
 }
