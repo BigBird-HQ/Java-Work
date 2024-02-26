@@ -50,7 +50,6 @@ public class Entry {
 
     public String toString() {
         return id +" "+  title +" "+ body +" "+ dateCreated +" "+ timeCreated;
-
     }
 
 

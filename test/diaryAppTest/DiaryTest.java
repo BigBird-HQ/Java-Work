@@ -2,6 +2,7 @@ package diaryAppTest;
 
 
 import diaryApp.Diary;
+import diaryApp.Entry;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -69,7 +70,9 @@ public class DiaryTest {
         assertFalse(myDiary.isLocked());
         myDiary.createEntry("title", "body");
         myDiary.createEntry("title1", "body1");
-
+        Entry foundEntry = myDiary.findEntryById(1);
+        assertEquals(myDiary.findEntryById(1), foundEntry);
     }
+
 
 }

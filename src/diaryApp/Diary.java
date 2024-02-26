@@ -42,8 +42,17 @@ public class Diary {
     }
 
     public int getTotalNumberOfEntry() {
-        return totalNumberOfEntry++;
+        return entries.size();
     }
 
 
+    public Entry findEntryById(int idNumber) {
+        for (Entry myEntry : entries) {
+            if (myEntry.getId() == idNumber) {
+                return myEntry;
+            }
+
+        }
+        return null;
+    }
 }
