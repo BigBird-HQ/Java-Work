@@ -17,7 +17,7 @@ public class Entry {
         this.title = title;
         this.body = body;
         this.dateCreated = LocalDate.now();
-        this.timeCreated = LocalTime.parse(LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss")))
+        this.timeCreated = LocalTime.parse(LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm:ss")));
     }
 
     public Entry(String title, String body) {
