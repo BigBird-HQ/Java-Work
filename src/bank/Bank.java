@@ -10,7 +10,7 @@ public class Bank {
     }
 
     public Account registerCustomer(String firstName, String lastName, String pin) {
-                     return new Account(firstName,lastName,pin);
+                     return new Account(firstName, lastName, pin);
               //    account.setAccountNumber();
       //  return numberOfCustomers;
     }

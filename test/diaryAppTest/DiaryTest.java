@@ -63,7 +63,7 @@ public class DiaryTest {
     }
 
     @Test
-    public void entryCanBeFoundUsingId_findEntryByIdTest() {
+    public void entryCanBeFoundById_findEntryByIdTest() {
         assertFalse(myDiary.isLocked());
         myDiary.lockDiary();
         assertTrue(myDiary.isLocked());
