@@ -13,11 +13,9 @@ public class BankTest {
 
     @Test
     public void bankCanRegisterACustomer() {
-        Bank myBank = new Bank();
+        Bank myBank = new Bank("Mavericks");
         Account myAccount = myBank.registerCustomer("firstName", "lastName", "1234");
         assertEquals(1, myBank.getNumberOfCustomers());
-
-
 
     }
 }

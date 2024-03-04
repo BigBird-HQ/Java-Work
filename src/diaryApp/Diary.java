@@ -63,4 +63,8 @@ public class Diary {
         updatedEntry.setBody("updatedBody");
         updatedEntry.setTitle();
     }
+
+    public String getUsername() {
+        return username;
+    }
 }
