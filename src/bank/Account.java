@@ -14,7 +14,7 @@ public class Account {
         this.number = number;
     }
 
-    public Account(String firstName, String lastName ,String pin){
+    public Account(String firstName, String lastName, String pin){
                    this(firstName+" "+lastName,0, pin, 0);
     }
 
