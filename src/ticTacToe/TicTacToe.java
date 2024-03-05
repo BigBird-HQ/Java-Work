@@ -24,7 +24,61 @@ public class TicTacToe {
         if (position == 1) {
             board[0][0] = BoardElements.X;
         }
+        if (position == 2) {
+            board[0][1] = BoardElements.X;
+        }
+        if (position == 3) {
+            board[0][2] = BoardElements.X;
+        }
+        if (position == 4) {
+            board[1][0] = BoardElements.X;
+        }
+        if (position == 5) {
+            board[1][1] = BoardElements.X;
+        }
+        if (position == 6) {
+            board[1][2] = BoardElements.X;
+        }
+        if (position == 7) {
+            board[2][0] = BoardElements.X;
+        }
+        if (position == 8) {
+            board[2][1] = BoardElements.X;
+        }
+        if (position == 9) {
+            board[2][2] = BoardElements.X;
+        }
     }
+    public void playerTwoPlays(int position) {
+        if (position == 1) {
+            board[0][0] = BoardElements.X;
+        }
+        if (position == 2) {
+            board[0][1] = BoardElements.X;
+        }
+        if (position == 3) {
+            board[0][2] = BoardElements.X;
+        }
+        if (position == 4) {
+            board[1][0] = BoardElements.X;
+        }
+        if (position == 5) {
+            board[1][1] = BoardElements.X;
+        }
+        if (position == 6) {
+            board[1][2] = BoardElements.X;
+        }
+        if (position == 7) {
+            board[2][0] = BoardElements.X;
+        }
+        if (position == 8) {
+            board[2][1] = BoardElements.X;
+        }
+        if (position == 9) {
+            board[2][2] = BoardElements.X;
+        }
+    }
+
 
 
 }

@@ -20,7 +20,6 @@ public class Diaries {
     }
 
     public Diary findByUsername(String username) {
-        //Diary expected = null;
         for (Diary diary : diaries) {
             if (diary.getUsername().equals(username)) {
                 return   diary;
@@ -29,7 +28,6 @@ public class Diaries {
         return null;
 
     }
-
 
     public void delete(String username, String password) {
         diaries.remove(findByUsername(username));
