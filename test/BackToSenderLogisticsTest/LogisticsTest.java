@@ -16,31 +16,31 @@ public class LogisticsTest {
 
     @Test
     public void dispatchRiderMadeLessThan50DailyCollection_successfulDeliveryTest() {
-        logistics.calculateDailyPay(40);
+        logistics.calculateDailyPayOn(40);
 
-        assertEquals(11400, logistics.calculateDailyPay(40));
+        assertEquals(11400, logistics.calculateDailyPayOn(40));
 
     }
 
     @Test
     public void dispatchRiderMadeLessThan60DailyCollection_successfulDeliveryTest() {
-        logistics.calculateDailyPay(55);
-        assertEquals(16000, logistics.calculateDailyPay(55));
+        logistics.calculateDailyPayOn(55);
+        assertEquals(16000, logistics.calculateDailyPayOn(55));
 
     }
     @Test
     public void dispatchRiderMadeLessThan70DailyCollection_successfulDeliveryTest() {
-        logistics.calculateDailyPay(67);
-        assertEquals(21750, logistics.calculateDailyPay(67));
+        logistics.calculateDailyPayOn(67);
+        assertEquals(21750, logistics.calculateDailyPayOn(67));
 
     }
     @Test
     public void dispatchRiderMadeMoreThan69DailyCollection_successfulDeliveryTest() {
-        logistics.calculateDailyPay(80);
-        assertEquals(45000, logistics.calculateDailyPay(80));
+        logistics.calculateDailyPayOn(80);
+        assertEquals(45000, logistics.calculateDailyPayOn(80));
     }
     @Test
     public void negativeDailyCollectionRate_throwIllegalArgumentExceptionTest() {
-        assertThrows(IllegalArgumentException.class, ()->logistics.calculateDailyPay(-60));
+        assertThrows(IllegalArgumentException.class, ()->logistics.calculateDailyPayOn(-60));
     }
 }

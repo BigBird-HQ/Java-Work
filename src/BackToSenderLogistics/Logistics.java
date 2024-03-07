@@ -2,7 +2,7 @@ package BackToSenderLogistics;
 
 public class Logistics {
     int basePay = 5000;
-    public int calculateDailyPay(int successfulDeliveryRate) {
+    public int calculateDailyPayOn(int successfulDeliveryRate) {
         if (successfulDeliveryRate < 0) throw new IllegalArgumentException("Invalid input");
         if (successfulDeliveryRate < 50) {
             return successfulDeliveryRate * 160 + basePay;
