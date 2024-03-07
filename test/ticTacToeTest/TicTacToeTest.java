@@ -15,7 +15,6 @@ public class TicTacToeTest {
     }
     @Test
     public void testThatGameIsFilledWithEMPTYAtStart() {
-        //ticTacToe.checkBoard()[0][0];
         assertEquals(BoardElements.EMPTY, ticTacToe.checkBoard()[0][0]);
     }
 
