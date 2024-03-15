@@ -22,7 +22,7 @@ public class Diaries {
     public Diary findByUsername(String username) {
         for (Diary diary : diaries) {
             if (diary.getUsername().equals(username)) {
-                return   diary;
+                return diary;
             }
         }
         return null;

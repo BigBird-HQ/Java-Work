@@ -11,12 +11,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class AccountTest {
     private Account myAccount;
-    private Account myAccount2;
 
     @BeforeEach
     public void initialize() {
         myAccount = new Account("Mesh", 0, "correctPin", 1000);
-        myAccount2 = new Account("Sam", 0, "correctPin", 1001);
+
     }
 
     @Test
@@ -125,28 +124,28 @@ public class AccountTest {
 
     }
 
-    @Test
-    public void twoAccountsCanExistIndependently_zeroBalanceTest() {
+//    @Test
+//    public void twoAccountsCanExistIndependently_zeroBalanceTest() {
+//
+//        assertEquals(0, myAccount.checkBalance("correctPin"));
+//        assertEquals(0, myAccount2.checkBalance("correctPin"));
+//
+//    }
+//
+//    @Test
+//    public void depositInBothAccounts_balanceIncreaseInBothAccountTest() {
+//
+//        assertEquals(0, myAccount.checkBalance("correctPin"));
+//        myAccount.deposit(2000);
+//        assertEquals(2000, myAccount.checkBalance("correctPin"));
+//
+//        assertEquals(0, myAccount2.checkBalance("correctPin"));
+//        myAccount2.deposit(3000);
+//        assertEquals(3000, myAccount2.checkBalance("correctPin"));
+//        assertEquals(2000, myAccount.checkBalance("correctPin"));
+//
+//    }
 
-        assertEquals(0, myAccount.checkBalance("correctPin"));
-        assertEquals(0, myAccount2.checkBalance("correctPin"));
-
-    }
-
-    @Test
-    public void depositInBothAccounts_balanceIncreaseInBothAccountTest() {
-
-        assertEquals(0, myAccount.checkBalance("correctPin"));
-        myAccount.deposit(2000);
-        assertEquals(2000, myAccount.checkBalance("correctPin"));
-
-        assertEquals(0, myAccount2.checkBalance("correctPin"));
-        myAccount2.deposit(3000);
-        assertEquals(3000, myAccount2.checkBalance("correctPin"));
-        assertEquals(2000, myAccount.checkBalance("correctPin"));
-
-    }
- 
 
 
 

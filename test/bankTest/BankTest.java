@@ -104,7 +104,4 @@ public class BankTest {
         assertEquals(3000, account1.checkBalance("pin"));
         assertEquals(2000, account2.checkBalance("pin"));
     }
-    @Test
-    public void changePinTest() {
-    }
 }
