@@ -67,4 +67,8 @@ public class Diary {
     public String getUsername() {
         return username;
     }
+
+    public List<Entry> getEntry() {
+        return entries;
+    }
 }

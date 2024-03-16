@@ -72,7 +72,7 @@ public class DiaryTest {
         myDiary.createEntry("title", "body");
         myDiary.createEntry("title1", "body1");
         Entry foundEntry = myDiary.findEntryById(1);
-        assertEquals(myDiary.findEntryById(1), foundEntry);
+        assertEquals(myDiary.getEntry().get(0), foundEntry);
     }
 
     @Test
