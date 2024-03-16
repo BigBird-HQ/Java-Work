@@ -40,7 +40,7 @@ public class Entry {
         return title;
     }
 
-    public void setTitle() {
+    public void setTitle(String newTitle) {
         this.title = title;
     }
 

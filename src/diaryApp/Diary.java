@@ -60,8 +60,8 @@ public class Diary {
 
     public void updateEntry(int idNumber, String newTitle, String newBody) {
         Entry updatedEntry = findEntryById(idNumber);
-        updatedEntry.setBody("updatedBody");
-        updatedEntry.setTitle();
+        updatedEntry.setBody(newBody);
+        updatedEntry.setTitle(newTitle);
     }
 
     public String getUsername() {
