@@ -13,5 +13,6 @@ public class TurtleGraphics {
 
     public void PenUp() {
         isPenUp = true;
+
     }
 }

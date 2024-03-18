@@ -30,6 +30,7 @@ public class TurtleGraphicsTest {
         assertFalse(turtle.isPenUp());
         turtle.PenUp();
         assertTrue(turtle.isPenUp());
+
     }
 
 }
